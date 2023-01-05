@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="sceneInstrucciones" fill="#9c8469" onKeyPressed="#continuar" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorInstrucciones">
+    <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: null;">
+      <children>
+         <Label fx:id="labContinuar" layoutX="77.0" layoutY="550.0" text="Pulsa cualquier tecla para continuar">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Pane layoutX="17.0" layoutY="54.0" prefHeight="106.0" prefWidth="366.0">
+            <children>
+               <Label fx:id="tituloControles" layoutX="14.0" layoutY="14.0" text="Controles">
+                  <font>
+                     <Font size="25.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labControlesFlechas" layoutX="14.0" layoutY="50.0" text="Pulsa las flechas o WASD para moverte." />
+               <Label fx:id="labControlesEsc" layoutX="14.0" layoutY="75.0" text="Pulsa Esc para volver al menú de opciones." />
+            </children>
+         </Pane>
+         <Pane layoutX="16.0" layoutY="161.0" prefHeight="371.0" prefWidth="369.0">
+            <children>
+               <Label fx:id="tituloJuego" layoutX="14.0" layoutY="14.0" text="Juego">
+                  <font>
+                     <Font size="25.0" />
+                  </font>
+               </Label>
+               <Label fx:id="labJuego1" layoutX="14.0" layoutY="50.0" prefHeight="18.0" prefWidth="322.0" text="Debes coger los trigos hasta que no queden" />
+               <Label fx:id="labJuego2" layoutX="14.0" layoutY="68.0" text="espacios vacíos." />
+               <ImageView fx:id="IVTrigo" fitHeight="75.0" fitWidth="79.0" layoutX="271.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../texturas/60/crecido.png" />
+                  </image>
+               </ImageView>
+               <Label fx:id="labJuego3" layoutX="14.0" layoutY="166.0" text="La hierba marca el lugar donde crecerá el" />
+               <Label fx:id="labJuego4" layoutX="16.0" layoutY="183.0" text="siguiente trigo." />
+               <ImageView fx:id="IVHierba" fitHeight="75.0" fitWidth="79.0" layoutX="271.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../texturas/60/sinCrecer.png" />
+                  </image>
+               </ImageView>
+               <Label fx:id="labJuego5" layoutX="18.0" layoutY="286.0" text="Aparecen agujeros cada vez que recoges un" />
+               <ImageView fx:id="IVAgujero" fitHeight="75.0" fitWidth="79.0" layoutX="271.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../texturas/60/agujero.png" />
+                  </image>
+               </ImageView>
+               <Label fx:id="labJuego6" layoutX="17.0" layoutY="303.0" text="trigo. No puedes pisar los agujeros asi que" />
+               <Label fx:id="labJuego7" layoutX="18.0" layoutY="320.0" text="intenta no quedarte atrapado." />
+            </children>
+         </Pane>
+         <Label layoutX="11.0" layoutY="12.0" text="Instrucciones">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Label>
+         <Line endX="282.3000183105469" layoutX="118.0" layoutY="65.0" startX="-127.5999755859375" strokeWidth="2.0" />
+      </children></AnchorPane>
+</Scene>

@@ -1,0 +1,1 @@
+Cuando coges un trigo sale un simbolito del trigo con un +1 al lado, en un HBox con una animacion de fade in, se muebe hacia arriba y un fade out
